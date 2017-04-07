@@ -95,7 +95,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate{
                 majorID = Int(myBeacon.major)
                 rssi = myBeacon.rssi
                 
-                print("The UUID is \(beaconUUID)\nThe major is \(majorID),the minor is \(minorID)\nAnd the RSSI is \(rssi)")
+                //print("The UUID is \(beaconUUID)\nThe major is \(majorID),the minor is \(minorID)\nAnd the RSSI is \(rssi)")
                 switch(myBeacon.proximity){
                 case CLProximity.far:
                     proximity = "far"
@@ -109,7 +109,10 @@ class ViewController: UIViewController,CLLocationManagerDelegate{
                 default:
                     proximity = "Unknown"
                 }
-                print("The proximity is \(proximity)")
+                //print("The proximity is \(proximity)")
+                
+                print("i = \(i)")
+                print("count = \(beacons.count)")
             }
         }
     }
